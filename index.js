@@ -3,7 +3,7 @@ const WebSocket = require('ws');
 const wss = new WebSocket.Server({ port: 8080 });
 
 wss.on('connection', (socket) => {
-  console.log('New client connected');
+  console.log('New client connected Server');
 
   socket.on('message', (message) => {
     console.log(`Received message: ${message}`);
